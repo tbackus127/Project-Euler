@@ -37,9 +37,9 @@ public class Euler1 {
   private static int usingSets(int limit) {
     int result = 0;
     HashSet<Integer> multiples = new HashSet<Integer>();
-    for(int i = 3; i < limit; i *= 3)
+    for(int i = 3; i < limit; i += 3)
       multiples.add(i);
-    for(int i = 5; i < limit; i *= 5)
+    for(int i = 5; i < limit; i += 5)
       multiples.add(i);
     for(int i : multiples)
       result += i;
